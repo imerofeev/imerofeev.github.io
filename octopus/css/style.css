@@ -1,0 +1,99 @@
+header {
+  font-family: Rubik, sans-serif; 
+}
+
+h1 {
+  font-weight: 600; 
+  font-size: 2em;
+}
+
+header span {
+  font-weight: 600; 
+  font-size: 2em;
+  color: #FF0033;
+}
+
+.octopus {
+  position: relative;
+  padding-top: 4em;
+  margin: 0 auto;
+}
+
+.octopus-head {
+  width: 20em;
+  height: 23.5em;
+  background: #FF0033;
+  border-radius: 0 15em 15em 0;
+  position: absolute;
+  left: 35em;
+}
+
+.octopus-head__eye {
+  display: inline-block;
+  right: 3em;
+  margin: 3em 3em 0 5em;
+  width: 4em;
+  height: 2em;
+  border-radius: 50%;
+  vertical-align: middle;
+  background:  #FFFFFF;
+  position: absolute;
+}
+
+.octopus-tentacle {
+  position:relative; 
+  width: 40em; 
+  height: 3em;
+}
+
+.skill {
+  top:10px;
+  right:10px;
+  position: absolute;
+  font-family: Arial; 
+  color: #FFFFFF;
+  letter-spacing: 0px; 
+  font-weight: 600; 
+  font-style: normal;
+  font-size: 14px;
+}
+
+.skill-scale {
+  height: 2.5em;
+  background:#FF0033;
+  border-radius: 1em 0 0 1em;
+  position: absolute;
+  right: 0;
+}
+
+.skill-scale-html {
+  width:25em;
+}
+
+.skill-scale-css {
+  width:20em;
+}
+
+.skill-scale-js {
+  width:10em;
+}
+
+.skill-scale-eng {
+  width:15em;
+}
+
+.skill-scale-blind {
+  width:15em;
+}
+
+.skill-scale-tm {
+  width:10em;
+}
+
+.skill-scale-softskill {
+  width:20em;
+}
+
+.skill-scale-new {
+  width: 7em;
+}
