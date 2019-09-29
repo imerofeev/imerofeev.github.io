@@ -1,4 +1,4 @@
-const dnsToRna = dna => {
+const dnaToRna = dna => {
   let rna = '';
   for (let i = 0; i < dna.length; i++); {
       switch (dna[i]) {
