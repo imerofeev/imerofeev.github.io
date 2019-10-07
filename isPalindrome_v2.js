@@ -2,6 +2,7 @@ const isPalindrome = (str) =>{
   if (str == undefined) {
     return false;
   }
+  str = str.toString();
   let i = str.length;
   if (i == 0) {
     return false;
