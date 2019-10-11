@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Webinterfaces of JS Functions</title>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <div class="menu">
+    <a href="#" class="menu__item dna-to-rna dna-to-rna-open">Convert DNA to RNA</a>
+    <a href="#" class="menu__item palindrome palindrome-open">Palindrome</a>
+    <a href="#" class="menu__item substring substring-open">Substring</a>
+  </div>
+  <section class="modal-dna modal">
+    <div class="modal-dna-content">
+      <h2 class="modal-dna-content__header">Convert DNA to RNA</h2>
+      <div class="modal-dna-content__converter">
+        <input id='dna-input' type="text" name="dna" placeholder="Enter your DNA chain">
+        <button class="modal-dna-content__button" onClick="convert()">Convert DNA to RNA</button>
+        <p class="modal-dna-content__result">Result of convertation is: <span class="result" id='rna-output'><span></p>
+      </div>
+      <div class="modal-dna-content__another">
+        <span class="modal-dna-content__another-header">You can try other functions:</span>
+        <button class="palindrome-link palindrome-modal-open">Palindrome</button>
+        <button class="substring-link subsring-modal-open">Substring</button>
+      </div>
+    </div>
+    <button class="modal-close">
+  </section>
+  <section class="modal-palindrome modal">
+    <div class="modal-palindrome-content">
+      <h2 class="modal-palindrome-content__header">Check is a string palindrome</h2>
+      <div class="modal-palindrome-content__checker">
+        <input id='palindrome-input' type="text" name="palindrome" placeholder="Enter your string">
+        <button class="modal-palindrome-content__button" onClick="checkPalindrome()">Check a string</button>
+        <p class="modal-palindrome-content__result">Result of checking is: <span class="result" id='palindrome-output'><span></p>
+      </div>
+      <div class="modal-palindrome-content__another">
+        <span class="modal-palindrome-content__another-header">You can try other functions:</span>
+        <button class="dna-link dna-to-rna-modal-open">Convert DNA to RNA</button>
+        <button class="substring-link subsring-modal-open">Substring</button>
+      </div>
+    </div>
+    <button class="modal-close">
+  </section>
+  <section class="modal-substring modal">
+    <div class="modal-substring-content">
+      <h2 class="modal-substring-content__header">Check is a string substring</h2>
+      <div class="modal-substring-content__getter">
+        <div class="modal-substring-content__input-group">
+          <input id='substring-str-input' type="text" name="substring-str" placeholder="Enter your string">
+          <input id='substring-start-input' type="text" name="substring-start" placeholder="Start position" size="10">
+          <input id='substring-length-input' type="text" name="substring-lenght" placeholder="Length" size="10">
+        </div>
+        <div class="modal-substring-content__output">
+          <button class="modal-substring-content__button" onClick="getsubstring()">Get a substring</button>
+          <p class="modal-substring-content__result">Result is: <span class="result" id='substring-output'><span></p>
+        </div>
+      </div>
+      <div class="modal-substring-content__another">
+        <span class="modal-substring-content__another-header">You can try other functions:</span>
+        <button class="dna-link dna-to-rna-modal-open">Convert DNA to RNA</button>
+        <button class="palindrome-link palindrome-modal-open">Palindrome</button>
+      </div>
+    </div>
+    <button class="modal-close">
+  </section>
+  <script src="js/script.js"></script>
+</body>
+</html>

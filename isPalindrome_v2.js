@@ -12,6 +12,12 @@ const isPalindrome = (str) =>{
   }
   if (str.substr(0, 1) !== str.substr(i - 1, 1)) {
     return false;
+  } else if (i == 2) {
+    if (str.substr(0, 1) !== str.substr(i - 1, 1)) {
+      return false;
+    } else {
+      return true;
+    }
   } else {
     return isPalindrome(str.substr(1, i -2));
   }

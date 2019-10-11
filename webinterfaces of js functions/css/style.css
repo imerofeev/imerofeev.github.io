@@ -1,0 +1,298 @@
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+  min-height: 600px;
+  margin: 0 auto;
+}
+
+.menu__item {
+  display: inline-block;
+  width: 390px;
+  height: 70px;
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 70px;
+  width: 100%;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 10px;
+}
+
+.dna-to-rna {
+  background-color: #63a63e;
+  color: #ffffff;
+  border-bottom: 3px solid #367315;
+  margin-top: 45px;
+  position: relative;
+}
+
+.dna-to-rna:hover,
+.dna-to-rna:focus {
+  background-color: #5fbb2d;
+  color: #ffffff;
+  border-bottom: 3px solid #367315;
+}
+
+.dna-to-rna:active {
+  background-color: #518534;
+  color: #ffffff;
+  border-bottom: 3px solid #367315;
+}
+
+.palindrome {
+  background-color: #ee3643;
+  color: #ffffff;
+  border-bottom: 3px solid #b52933;
+  margin-top: 45px;
+  position: relative;
+}
+
+.palindrome:hover,
+.palindrome:focus {
+  background-color: #ca2c37;
+  color: #ffffff;
+  border-bottom: 3px solid #9a212a;
+}
+
+.palindrome:active {
+  background-color: #ba2732;
+  color: #ffffff;
+  border-bottom: 3px solid #8e1e26;
+}
+
+.substring {
+  background-color: #293449;
+  color: #ffffff;
+  border-bottom: 3px solid #06080a;
+  margin-top: 45px;
+  position: relative;
+}
+
+.substring:hover,
+.substring:focus {
+  background-color: #374663;
+  color: #ffffff;
+  border-bottom: 3px solid #293449;
+}
+
+.substring:active {
+  background-color: #003296;
+  color: #ffffff;
+  border-bottom: 3px solid #030114;
+}
+
+.modal {
+  display: none;
+}
+
+.modal-dna-content,
+.modal-palindrome-content,
+.modal-substring-content {
+  width: 480px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.modal-dna-content__converter,
+.modal-palindrome-content__cheker,
+.modal-substring-content__getter {
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.modal-substring-content__input-group {
+  margin: 0 auto;
+}
+
+.modal-substring-content__output {
+  margin: 0 auto;
+}
+
+.modal-dna,
+.modal-palindrome,
+.modal-substring {
+  background-color: #ffffff;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.75);
+          box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.75);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 620px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: 100;
+  min-height: 283px;
+  margin-left: -310px;
+  margin-top: -200px;
+}
+
+.modal-dna-content__header,
+.modal-palindrome-content__header,
+.modal-substring-content__header {
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 30px;
+  width: 100%;
+  margin-top: 67px;
+  margin-bottom: 67px;
+  padding: 0 10px 0 100px;
+}
+
+.modal-dna-content__header::before {
+  content: "";
+  position: absolute;
+  background: url("../img/icon-dna.svg") no-repeat;
+  width: 66px;
+  height: 66px;
+  top: 48px;
+  left: 80px;
+}
+
+.modal-palindrome-content__header::before {
+  content: "";
+  position: absolute;
+  background: url("../img/icon_palindrome.svg") no-repeat;
+  width: 66px;
+  height: 66px;
+  top: 48px;
+  left: 80px;
+}
+
+.modal-substring-content__header::before {
+  content: "";
+  position: absolute;
+  background: url("../img/icon_substring.svg") no-repeat;
+  width: 66px;
+  height: 66px;
+  top: 48px;
+  left: 80px;
+}
+
+.modal-dna-content__button {
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #5fbb2d;
+  color: #ffffff;
+  width: 220px;
+  margin: 0 10px 0 10px;
+  padding: 11px 5px 9px 5px;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-palindrome-content__button {
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #ee3643;
+  color: #ffffff;
+  width: 220px;
+  margin: 0 10px 0 10px;
+  padding: 11px 5px 9px 5px;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-substring-content__button {
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #293449;
+  color: #ffffff;
+  width: 150px;
+  margin: 10px 10px 0 30%;
+  padding: 11px 5px 9px 5px;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-dna-content__result,
+.modal-palindrome-content__result,
+.modal-substring-content__result {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.result {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff0707;
+}
+
+.modal-dna-content__another,
+.modal-palindrome-content__another,
+.modal-substring-content__another {
+  margin: 0 auto;
+  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.modal-dna-content__another-header,
+.modal-palindrome-content__another-header,
+.modal-substring-content__another-header {
+  font-size: 30px;
+  line-height: 18px;
+  margin-bottom: 20px;
+}
+
+.dna-link,
+.palindrome-link,
+.substring-link {
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  width: 220px;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 10px 0 10px;
+  padding: 11px 5px 9px 5px;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+}
+
+.dna-link {
+  background-color: #5fbb2d;
+}
+
+.palindrome-link{
+  background-color: #ee3643;
+}
+
+.substring-link {
+  background-color: #293449;
+}
+
+.modal-close {
+  background: url("../img/icon-close.svg") no-repeat;
+  position: absolute;
+  right: 9px;
+  top: 10px;
+  border: none;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  z-index: 150;
+}
+
+.modal-show {
+  display: block;
+}
