@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Intrface of Substring Function</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+  <div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+				<ul class="nav nav-pills">
+					<li class="nav-item">
+						<a class="nav-link" href="dna.html">DnaToRna Function</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="palindrome.html">Palindrome Function</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" href="#">Substring Function</a>
+					</li>
+				</ul>
+				<div class="function">
+          <h2 class="header">Get a substring</h2>
+          <div class="content">
+            <div class="input-group">
+              <input id='substring-str-input' type="text" name="substring-str" placeholder="Enter your string">
+              <input id='substring-start-input' type="text" name="substring-start" placeholder="Start position" size="10">
+              <input id='substring-length-input' type="text" name="substring-lenght" placeholder="Length" size="5">
+            </div>
+            <div class="substring-output">
+              <button class="substring-btn btn" onClick="getSubstring()">Get a substring</button>
+              <p class="result-text">Result is: <span class="result" id='substring-output'><span></p>
+            </div>
+          </div>
+				</div>
+			</div>
+		</div>
+	</div>
+  <script src="js/script.js"></script>
+  </body>
+</html>

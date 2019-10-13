@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Intrface of DnaToRna Function</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+  <div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+				<ul class="nav nav-pills">
+					<li class="nav-item">
+						<a class="nav-link active" href="#">DnaToRna Function</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="palindrome.html">Palindrome Function</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="substring.html">Substring Function</a>
+					</li>
+				</ul>
+				<div class="function">
+					<h2 class="header">Convert DNA to RNA</h2>
+					<div class="content">
+						<input id="dna-input" type="text" name="dna-input" placeholder="Enter your DNA chain">
+						<button class="btn" onClick="convert()">Convert DNA to RNA</button>
+						<p class="result-text">Result of convertation is: <span class="result" id='rna-output'><span></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+  <script src="js/script.js"></script>
+  </body>
+</html>
