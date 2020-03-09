@@ -1,0 +1,169 @@
+@font-face {
+  font-family: "Lato";
+  src: url("assets/Lato-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("assets/Lato-Light.ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("assets/Lato-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("assets/Lato-Black.ttf");
+  font-weight: 900;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.wrapper {
+  width: 1020px;
+  margin: 0 auto;
+}
+
+.portfolio {
+  height: 789px;
+  padding: 35px 40px 40px 40px;
+  color: #666D89;
+  background-color: #2D303A;
+  border-bottom: 6px solid #323746;
+}
+
+.portfolio__header,
+.about-us__header {
+  font-size: 30px;
+  font-weight: 900;
+  letter-spacing: 0.05px;
+}
+
+.portfolio__description,
+.about-us__description {
+  margin-top: -2.5px;
+  margin-bottom: 14px;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.portfolio__button {
+  font-size: 12px;
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+  margin-right: 7px;
+  padding: 2.5px 6.2px;
+  color: inherit;
+  border: 1px solid #666D89;
+  background-color: transparent;
+  border-radius: 5px;
+}
+
+.portfolio__button:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  color: #FFFFFF;
+}
+
+.portfolio__button--active {
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+}
+
+.portfolio__pictures {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  height: 620px;
+}
+
+.portfolio__picture {
+  width: 220px;
+  height: 187px;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.portfolio__picture:nth-child(4n) {
+  margin-right: 0;
+}
+
+.about-us {
+  height: 653px;
+  padding: 35px 40px 40px 40px;
+  color: #666D89;
+  background-color: #F2F2F2;
+  border-bottom: 5.5px solid #FFFFFF;
+}
+
+.about-us__description {
+  color: #767E9E;
+  font-weight: lighter;
+  margin-top: -7px;
+  margin-bottom: 44px;
+  line-height: 1.7;
+}
+
+.about-us__staff {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.staff {
+  width: 300px;
+  height: 460px;
+  margin-right: 20px;
+}
+
+.staff:nth-child(3n) {
+  margin-right: 0;
+}
+
+.staff__photo {
+  margin-bottom: 13px;
+}
+
+.staff__name {
+  white-space: nowrap;
+  overflow: hidden;
+  letter-spacing: 0px;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.staff__description {
+  margin-top: 8px;
+  height: 41.6px;
+  font-weight: 400;
+  overflow: hidden;
+  text-align: justify;
+  font-size: 12px;
+  line-height: 1.75;
+  letter-spacing: -0.1px;
+}
+
+.staff__links {
+  padding-top: 12px;
+}
+
+.links-icon {
+  margin-right: 5px;
+}
+
+.links-icon:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
